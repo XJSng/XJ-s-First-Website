@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <title>Forms</title>
+  <meta charset="utf-8" />
+  <link href="css/style.css" rel="stylesheet" />
+  <head>
+    <h1>Forms</h1>
+    <p>
+      forms are one of the ways users can interact with a website about it's
+      users
+    </p>
+  </head>
+  <body>
+    <header>
+      <h2>How to create a basic form</h2>
+      <p>This is a text label for your First and Last name</p>
+      <form>
+        <label for="firstName">First Name:</label>
+        <input id="firstName" type="text" name="firstName" />
+        <div>
+          <label for="lastName">Last Name</label>
+          <input id="lastName" type="text" name="lastName" />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </header>
+    <h2>Different types of input</h2>
+    <p>
+      This form has different types of input to collect different types of data
+    </p>
+    <form>
+      <!--This is form which will validate email addresses-->
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" />
+      <input type="submit" value="Save Email" />
+      <div>
+        <!--This is an input for validating telephone numbers-->
+        <label for="telephone">Telephone</label>
+        <input id="telephone" type="tel" name="" telephone />
+        <input type="submit" value="Save Number" />
+      </div>
+      <!--Multiple line of text-->
+      <label for="yourMessage">Your Message</label>
+      <textarea id="yourMessage"></textarea>
+      <input type="submit" value="Send Message" />
+    </form>
+    <h2>More form options</h2>
+    <p>
+      There are many more options for user to input their response here we will
+      learn 3 more
+    </p>
+    <ul>
+      <li>Select (dropdown box)</li>
+      <li>Radio (Single option)</li>
+      <li>Checkbox</li>
+    </ul>
+    <form>
+      <div></div>
+      <!--This is the dropdown box option-->
+      <label for="colourSelector">What is your favourite primary colour?</label>
+      <div></div>
+      <select name="colourSelector">
+        <option value="colourRed">Red</option>
+        <option value="colourBlue">Blue</option>
+        <option value="colourYellow">Yellow</option>
+      </select>
+      <div></div>
+      <!--This is the radio box option-->
+      <fieldset>
+        <legend>
+          What is your favourite meal? (You can only choose one option)
+        </legend>
+        <input
+          type="radio"
+          id="breakfast"
+          name="favouriteMeal"
+          value="breakfast"
+        /><label>Breakfast</label>
+        <input
+          type="radio"
+          id="brunch"
+          name="favouriteMeal"
+          value="brunch"
+        /><label>Brunch</label>
+        <input
+          type="radio"
+          id="lunch"
+          name="favouriteMeal"
+          value="lunch"
+        /><label>Lunch</label>
+        <input type="radio" id="tea" name="favouriteMeal" value="tea" /><label
+          >Tea</label
+        >
+        <input
+          type="radio"
+          id="dinner"
+          name="favouriteMeal"
+          value="dinner"
+        /><label>Dinner</label>
+        <input
+          type="radio"
+          id="Supper"
+          name="favouriteMeal"
+          value="supper"
+        /><label>Supper</label>
+      </fieldset>
+      <!--This is the dropdown box option-->
+      <fieldset>
+        <legend>
+          What is your favourite meal? (You can choose multiple options)
+        </legend>
+        <input
+          type="checkbox"
+          id="breakfast"
+          name="favouriteMeal"
+          value="breakfast"
+        /><label>Breakfast</label>
+        <input
+          type="checkbox"
+          id="brunch"
+          name="favouriteMeal"
+          value="brunch"
+        /><label>Brunch</label>
+        <input
+          type="checkbox"
+          id="lunch"
+          name="favouriteMeal"
+          value="lunch"
+        /><label>Lunch</label>
+        <input
+          type="checkbox"
+          id="tea"
+          name="favouriteMeal"
+          value="tea"
+        /><label>Tea</label>
+        <input
+          type="checkbox"
+          id="dinner"
+          name="favouriteMeal"
+          value="dinner"
+        /><label>Dinner</label>
+        <input
+          type="checkbox"
+          id="Supper"
+          name="favouriteMeal"
+          value="supper"
+        /><label>Supper</label>
+      </fieldset>
+    </form>
+  </body>
+
+  <div></div>
+
+  <footer>
+    <b>This is the footer</b>
+    <a href="/Index.html">Back to Homepage</a>
+  </footer>
+</html>

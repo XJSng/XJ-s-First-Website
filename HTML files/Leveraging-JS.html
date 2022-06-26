@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <title>Leveraging JavaScript</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/css/css-special.css" rel="stylesheet" />
+    <link href="/css/lightbox.css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/cycle2.js"></script>
+    <script type="text/javascript" src="/js/declarativeToggle.js"></script>
+    <script type="text/javascript" src="/js/lightbox.min.js"></script>
+   
+    <link
+    href="https://fonts.googleapis.com/css?family=PT+Sans"
+    rel="stylesheet"
+  />
+
+  </head>
+    <header class="explainer-text">
+      <h1>Introduction to CSS3 Special Effects</h1>
+      <h2>Creating Slideshows by leveraging JavaScript</h2>
+      <p>We are going to create a slideshow starting with the following</p>
+      <ul>
+         <li>Our own HTML & CSS code</li>
+          <li>Cycle2 by Mike Alsup</li>
+      </ul>
+      <p>Because we have our own code here, we will move to download cycle2.js file <strong><a href="https://jquery.malsup.com/cycle2/" target="#">here</a></strong>
+    This file has a dependecy on JQuery</p>
+
+    <h2>Reveal & Hide Content on Click/Tap</h2>
+    <p>You've probably seen how certain buttons on websites have menues or buttons which reveal more information.
+        <ul>Our Recipe for creating this feature requires 2 ingredients:
+            <li>Custom HTML & CSS</li>
+            <li>JavaScript Plugin: Declarative Toggle</li>
+        </ul>
+    </p>
+
+    <h2>Creating a Modal Window(Gallery)</h2>
+    <p>We can create a gallery of pictures which are interactive when users click on a photo. The photo will be enlarged and background will be darken to highlight the photo, this is known as Modal Window. You can see the example <a href="">here</a></p>
+    <ul>Our Recipe for creating this feature requires 2 ingredients:
+        <li>Custom HTML & CSS</li>
+        <li>JavaScript Plugin: <a href="https://lokeshdhakar.com/projects/lightbox2/" target="#">Lightbox by Lokesh Dhakar</a></li>
+    </ul>
+    </header>
+
+
+    <header class="section">
+      <!-- container -->
+      <div class="container">
+        <h1>Website Title</h1>
+        <p class="hide-small">Website slogan included here.</p>
+
+        <span data-toggle-target=".site-nav" class="toggle-btn">MENU</span>
+        <nav class="site-nav">
+          <ul class="group">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li class="hide-small"><a href="#">FAQs</a></li>
+            <li class="hide-small"><a href="#">Links</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /container -->
+    </header>
+
+    <div class="content-area group section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <!-- col -->
+          <div class="col col-md-8 push-down-sm">
+            <div
+              class="cycle-slideshow"
+              data-cycle-slides=".slide"
+              data-cycle-pause-on-hover="true"
+            >
+              <span class="cycle-prev">&laquo;</span>
+              <span class="cycle-next">&raquo;</span>
+              <span class="cycle-pager"></span>
+              <div class="slide">
+                <img
+                  src="/media/images/Singapore_01.jpg"
+                  alt="Evening Singapore Skyline"
+                />
+
+                <div class="slide-text">
+                  <h3>Welcome to Singapore</h3>
+                  <p>
+                    We are a little red dot located at the tip of the Malay Peninsula.
+                    <a href="https://www.visitsingapore.com/singaporediscovers/?cmp=SEM_SRD-STB-DC22-841-SG_SG_DC_ENG_NA_NONE_NONE_NA_PM-DiscoverPassions_GOOG_SEA_AW_Cross_XTG&gclid=CjwKCAjwv-GUBhAzEiwASUMm4lJAmgmkwfc4su9NGVdhOeHawA5ps_2obgi4gOQDe9zSBSrg1ydnJxoC3lYQAvD_BwE&gclsrc=aw.ds" target="#" class="btn-a">Click Here to find out more!</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/media/images/Singapore_02.jpg"
+                  alt="Singapore Jewel"
+                />
+
+                <div class="slide-text">
+                  <h3>This is Singapore's Jewel</h3>
+                  <p>
+                    This is the caption or descriptive text for the Singapore's Jewel at Changi airport.
+                  </p>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/media/images/Singapore_03.jpg"
+                  alt="Singapore Housing"
+                />
+
+                <div class="slide-text">
+                  <h3>Singaporeans live in stacked housing called HDB</h3>
+                  <p>
+                    This is the caption or descriptive text for the HDB
+                    slide.
+                  </p>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img
+                  src="/media/images/Singapore_04.jpg"
+                  alt="The Merlion"
+                />
+
+                <div class="slide-text">
+                  <h3>This is the Merlion, Singapore's National Icon</h3>
+                </div>
+              </div>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.<span data-toggle-target=".full-text" data-toggle-text="Hide The full text" class="toggle-btn read-more">Read the full text...</span>
+            </p>
+          </div>
+          <!-- /col -->
+
+            <!-- full-text -->
+        <div class="full-text">
+            <h2>Full Text</h2>
+  
+            <p><strong>This is the full text</strong>, lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+  
+            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <!-- /full-text -->
+
+          <!-- col -->
+          <div class="col col-md-4 sidebar">
+            <h3>Sidebar Heading</h3>
+            <p>
+              Sidebar Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+              amet, consectetur adipisicing elit, sed do eiusmod.
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <p>
+              Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit, sed do eiusmod.
+            </p>
+          </div>
+          <!-- /col -->
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    
+  
+    <!-- thumbnails -->
+    <h2 class="MWE">Modal Window Example</h2>
+        <div class="thumbnails group">
+        <a href="media/modal-images/strawberry.jpg" data-lightbox="gallery" data-title="This is a strawberry."><img src="media/modal-images/strawberry-thumb.jpg" alt="Strawberry"></a>
+        <a href="media/modal-images/dock.jpg" data-lightbox="gallery"><img src="media/modal-images/dock-thumb.jpg" alt="Dock"></a>
+        <a href="media/modal-images/bee.jpg" data-lightbox="gallery"><img src="media/modal-images/bee-thumb.jpg" alt="Bee"></a>
+        <a href="media/modal-images/bear.jpg" data-lightbox="gallery"><img src="media/modal-images/bear-thumb.jpg" alt="Bear"></a>
+        <a href="media/modal-images/squirrel.jpg" data-lightbox="gallery"><img src="media/modal-images/squirrel-thumb.jpg" alt="Squirrel"></a>
+        <a href="media/modal-images/trees.jpg" data-lightbox="gallery"><img src="media/modal-images/trees-thumb.jpg" alt="Trees"></a>
+        <a href="media/modal-images/water.jpg" data-lightbox="gallery"><img src="media/modal-images/water-thumb.jpg" alt="Water"></a>
+        <a href="media/modal-images/duck.jpg" data-lightbox="gallery"><img src="media/modal-images/duck-thumb.jpg" alt="Duck"></a>
+          </div>
+
+      <!-- /thumbnails -->
+    <footer>
+      <p>
+        &copy; 2022 - This is the footer.
+        <a href="Index.html" target="_blank">Return Home</a>
+        <a href="#">Back to Top</a>
+      </p>
+    </footer>
+  </html>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <title>Introduction to CSS</title>
+  <head>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <header>
+    <h1><a id="top"></a>Introduction to CSS</a></h1>
+    <p>
+      CSS stands for Cascading Style Sheets and it is used to stylise the
+      website
+    </p>
+    <p>
+      This is done by linking to a CSS file. Example &lt;link href="style.css
+      rel="stylesheet"/&gt;
+    </p>
+  </header>
+  <body>
+    <h2>CSS Selectors</h2>
+    <p>There are three types of selectors:</p>
+    <ul>
+      <li><a href="#typeSelector">Type selectors</a></li>
+      <li><a href="#descendantSelector">Descendant selectors</a></li>
+      <li><a href="#classSelector">Class selectors</a></li>
+      <li><a href="#mixSelector">Mixing Selectors</a></li>
+      <div>
+          <li><a href="#cascade">Cascade</a></li>
+          <li><a href="#box_Model">Box Model</a></li>
+          <li><a href="#float">Floats & Flex Box</a></li>
+      </div>
+    </ul>
+    <h3 id="typeSelectors">Type Selectors</h3>
+    <p>
+      When we want to target an element to stylise say all paragraph
+      text, we can use the <strong>p</strong> in CSS as such <br><strong>p</strong> {<br> color: blue;<br>}<br>
+    </p>
+    <h3 id="descendantSelector">Descendant Selectors</h3>
+    <p>
+      When we want to target specific elements within another element to stylise, say
+      the paragraph text within all header section, we can use the <strong>header p</strong> in CSS as such <br><strong>header p</strong> {<br> color: black;<br></dbr>}<br> Think of it like a Russian doll, the computer is seaching the specific element until it finds the right element to style.
+    </p>
+    <h3 id="classSelector">Class selectors</h3>
+    <p class="highlight">
+    This paragraph has been given the class="highlight". Therefore, when we want to stylise this element all we have to do is type in <strong>.highlight</strong> in CSS as such: <br><strong>.highlight</strong> {<br> background-color: yellow;<br>}<br>
+    </p>
+    <div>
+    <h3 id="mixSelector">Mixing selectors</h3>
+    <p>You can mix selectors like Descendant & Class Selectors to target specific class on your website. Example: You want highlight the paragraph in the footer element. You can first give the footer paragraph a "greylight" class. Then, work on the CSS file using the <strong>footer .greylight</strong>{<br> background-color: grey;<br>}<br></p>
+</div>
+<div>
+    <h3 id= "cascade" class="cascade">Cascade</h3>
+    <p class="cascade">By definition a <strong>cascade</strong> means: <em>A small waterfall, typically one of several that fall in stages down a slope.</em> Like a waterfall, the web browser has a default font, size and colour for their texts flowing through the website. Unlike the waterfall, we can use CSS to change the values of the website</p>
+    <p class="cascade">The second thing to note is this idea of <strong>inheritance</strong> that certain CSS properties are passed along from ancestor to children elements.</p>
+    <p class="cascade">The last thing to note is <strong>specificity</strong>. When two CSS properties fight over an element. For example, you want to target the text <span>navy</span> in this paragraph to a different colour but &lt;p&gt; and &lt;span p&gt; are fighting over this element. This is where being specific helps, not only that the ordering of our rules matter.</p>
+    <ol class="cascade">The order of which CCS propertiy gets priority begining:
+        <li>Descendant Selector + Class Selector (footer. className)</li>
+        <li>Class Selectors (.className)</li>
+        <li>Deeply Nested Descendant Selectors (body footer p)</li>
+        <li>Shallow Nested Descendant Selectors (footer p)</li>
+        <li>Type selectors (p)</li>
+    </ol>
+    <p>When two rules have identical specificity values, the one which comes last will be followed. Example,
+        <div class="example"><strong>p</strong> {<div> color: blue;<div class="example">}</div></div></div>
+        <div class="example"><strong>p</strong> {<div> color: grey;<div class="example">}</div></div></div>
+        The grey colour will be applied.
+    </p>
+
+</div>  
+<h3 id="box_Model">CSS Box Model</h3>
+<p>Every webpage is a collection of boxes.</p>
+<div class="Box_A">All websites are a collection of boxes. We use:
+    <ul>
+        <li><strong>padding</strong> to create space inside the box</li>
+        <li><strong>border</strong> to create a line on the box</li>
+        <li><strong>margin</strong> to create space outside the box</li>
+    </ul>
+</div>
+    <div class="Box_B">Box B</div>
+
+ 
+    <div class="container">
+      <h3 id="float">
+        Floats & Flex Box
+      </h3>
+      <div class="content-area group">
+      <div class="main-area">
+        <p>The use of floats in CSS makes columns on a website possible. Beginning with two div classes "main-area" & "sidebar" but you can name it however you see fit.
+         <br> This is the "main-area" div. Next we want to create another div called "container" and move contents from the previous 2 div into the "container" div. In CSS, I am able to target the .container as so: 
+          <br><strong>.container </strong>{<br>
+            max-width: 940px;
+            <br>margin-left: auto;<br>margin-right
+            <br>}  
+            <br>
+            <br> Now we will create another div class called "content-area" under the "container" div. Next, we will copy and paste both "main-area" and "sidebar" div into the "content-area" div. We can now style the "content-area" div in CSS with the following: <br><strong>.content-area</strong> {<br>
+        border-top: 2px solid black;
+        <br>border-bottom: 2px solid black;<br>}
+        <br>
+        We will then set both the "main-area" and "sidebar" elements to 66% and 34% respectively plus a float element as such "float:left;". <br>This will create 2 columns but the border will also move to the top. This is because the parent element (content-area) does not recognise floated elements. 
+
+    
+      </p>
+       </div> 
+      <aside class="sidebar">
+      <p>We can fix this adding another class to the "main-area" element called "group" and it should look like this <br><strong>&lt;div class= "main-area group"&gt;</strong> 
+        <br>Next we will add what is called a "clearfix" method as such:
+        <br>.group:before,
+        <br>.group:after {
+          <br> content: "";
+          <br> display: table;
+          <br>}
+          <br>
+          <br>.group:after {
+            <br>clear: both;
+            <br> }
+        
+            <br>        .group {
+              <br>zoom: 1;
+              <br>}</p>   
+      </aside>
+  
+        </div>
+      </div>
+    </div>
+    <h3 class="special-header">CSS Review</h3>
+    <p>A quick review of what we have done can be found on <a href="CSS_Review.html" target="_blank">this page</a></p>
+
+  </body>
+  <footer>
+    <p>&copy; 2014 - This is the footer.</p>
+  </footer>
+</div>
+
+  </body>
+
+
+  <footer>
+    <p class="greylight">This is the footer with the "greylight" class</p>
+    <p>This is the footer without the greylight class</p>
+    <a href="/Index.html">Back to Homepage</a>
+<a href="#top">Back to the top</a>
+  </footer>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <title>Intermediate CSS</title>
+  <head>
+    <meta charset="utf-8" />
+    <link href="Style_for_Test_page.css" rel="stylesheet" />
+  </head>
+  <header>
+    <h1 class="header-class">Intermediate CSS</h1>
+    <h2>Navigation</h2>
+    <p class="top-p">
+      We have created a navigation bar by styling a &lt;nav&gt;, &lt;ul&gt;,
+      &lt;li&gt; and &lt;a&gt; elements. Example can be found below the position
+      header.
+    </p>
+    <h2>Position</h2>
+    <p class="top-p">
+      We are going to use the position element in CSS to overlay a text over an
+      image.
+    </p>
+  </header>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Website Title</h1>
+        <p>Website slogan included here.</p>
+        <nav class="site-nav">
+          <ul class="group">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="content-area group">
+        <div class="main-area">
+          <p>
+            This is the main area (or column). Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <div class="image-banner">
+            <img src="media/desola-lanre-ologun-xvcdAmbXcOI-unsplash.jpg" />
+            <div class="banner-description">
+              <p>
+                This is a body of text to describe this photo. It is a test
+                image for our wedding logo designed for this website exercise.
+                It is set to position: absolute.
+              </p>
+            </div>
+          </div>
+
+          <p>
+            <strong>The z-index: the battle of the overlaps</strong> What
+            happens when both classes are set to position relative? By default,
+            the class which appears further down in the html code will get
+            priority. However, there is a way to override this by using z-index.
+            <strong>z-Index</strong> is a ranked priority code in CSS. You use
+            it as such <br /><strong>.class of your choice</strong> {
+            <br />z-index: 10;<br />}
+          </p>
+        </div>
+
+        <aside class="sidebar">
+          <p>
+            This is the sidebar. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu.
+          </p>
+        </aside>
+      </div>
+
+      <footer>
+        <p>&copy; 2014 - This is the footer.</p>
+      </footer>
+    </div>
+  </body>
+  <footer>
+    <b>This is the footer</b>
+    <a href="#top">Back to the top</a>
+    <a href="/Index.html">Back to Homepage</a>
+  </footer>
+</html>

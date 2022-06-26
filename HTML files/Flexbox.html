@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <title>Flexbox</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/Flexbox.css" rel="stylesheet" />
+  </head>
+
+  <header class="explainer-text">
+    <h1>Introduction to Flexbox</h1>
+    <h2>What is a Flexbox?</h2>
+    <p>
+      Think of flexbox as a more efficient way to layout, align, and distribute
+      space among items in a container, even then their size is unknown or
+      dynamic. Its giving element the autonomy to alther their size to best fill
+      the available space giving to it. For more information on flex box, you
+      can check out the
+      <a
+        href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+        target="#"
+        >Complete Flexbox Guide</a
+      >.
+      <br />
+      <br />Here are some examples of how it works:
+    </p>
+
+    <!-- first example -->
+    <h2 class="anti-flex">Example 1: The Basics of Flexbox</h2>
+    <div class="container">
+      <form action="">
+        <div class="form-row">
+          <label for="name">Name:</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="form-row">
+          <label for="favColor">Favorite Color:</label>
+          <input type="text" id="favColor" />
+        </div>
+      </form>
+    </div>
+
+    <!-- second example -->
+    <h2 class="anti-flex">Example 2: How Flexboxes Divide Divs</h2>
+    <div class="column-layout">
+      <div class="main-column">
+        <h3>Main Column</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+          voluptatibus soluta, consequuntur, reiciendis debitis omnis fugiat
+          libero pariatur amet laudantium minima consectetur tenetur.
+          Repudiandae, autem, voluptate modi deleniti sequi voluptatum!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi earum
+          fugit veniam amet quae sint vitae numquam dolore sunt quod a odio
+          officia voluptate doloribus, at. Cum quasi mollitia eaque.
+          Voluptatibus soluta, consequuntur, reiciendis debitis omnis fugiat
+          libero pariatur amet laudantium.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
+          voluptatibus soluta, consequuntur, reiciendis debitis omnis fugiat
+          libero pariatur amet laudantium minima consectetur tenetur.
+          Repudiandae, autem, voluptate modi deleniti sequi voluptatum!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi earum
+          fugit veniam amet quae sint vitae numquam dolore sunt quod a odio
+          officia voluptate doloribus, at. Cum quasi mollitia eaque.
+        </p>
+      </div>
+
+      <div class="sidebar-one">
+        <h3>Sidebar One</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
+          modi nisi tenetur sint dignissimos nulla, blanditiis nesciunt.
+        </p>
+      </div>
+
+      <div class="sidebar-two">
+        <h3>Sidebar Two</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
+          modi nisi tenetur sint dignissimos nulla, blanditiis nesciunt.
+        </p>
+      </div>
+    </div>
+
+    <!-- third example -->
+    <h2 class="anti-flex">Example 3: Adding margins in flex</h2>
+    <div class="call-outs-container">
+      <div class="call-out">
+        <h4>Feature 1</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
+          obcaecati vel, placeat numquam omnis sit consectetur nobis molestias!
+          Explicabo deserunt. Consectetur adipisicing elit. Quibusdam obcaecati
+          vel, placeat numquam placeat numquam omnis sit consectetur.
+        </p>
+      </div>
+
+      <div class="call-out">
+        <h4>Feature 2</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
+          obcaecati vel, placeat numquam omnis sit consectetur nobis molestias!
+          Explicabo deserunt placeat numquam omnis.
+        </p>
+      </div>
+
+      <div class="call-out">
+        <h4>Feature 3</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
+          obcaecati vel, placeat numquam omnis sit.
+        </p>
+      </div>
+    </div>
+
+    <!-- fourth example -->
+    <h2 class="anti-flex">Example 4: flex-warp: warp;</h2>
+    <p class="anti-flex">
+      What happens if you want your boxes to warp on smaller screen?
+      <br />We can use the "flex-warp" properity to automate the boxes to warp
+      down when the screen gets smaller.
+    </p>
+    <div class="fixed-size-container">
+      <div class="fixed-size">1</div>
+      <div class="fixed-size">2</div>
+      <div class="fixed-size">3</div>
+      <div class="fixed-size">4</div>
+      <div class="fixed-size">5</div>
+    </div>
+
+    <!-- fifth example -->
+    <h2 class="anti-flex">Example 5: Centralise text in a box</h2>
+    <p class="anti-flex para">
+      Centralise the text with "display: flex;" for the parent element. Then add
+      "margin: auto" in the child element.
+    </p>
+    <div class="banner">
+      <div class="center-me">Center Me Plz</div>
+    </div>
+
+    <!-- sixth example -->
+    <h2 class="anti-flex">Example 6: Seperating Segments</h2>
+    <div class="equal-height-container">
+      <div class="first">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi
+          similique amet voluptatem molestiae nostrum ab nesciunt blanditiis
+          repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi
+          doloribus quo.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+          quisquam, veritatis ducimus, vero magnam hic quia pariatur asperiores
+          laudantium quod nobis perspiciatis, expedita quo reprehenderit quasi
+          iusto ullam error reiciendis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quasi
+          similique amet voluptatem molestiae nostrum ab nesciunt blanditiis
+          repellendus quos, sequi sunt, dolorem quis facilis mollitia nemo modi
+          doloribus quo.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+          quisquam, veritatis ducimus, vero magnam hic quia pariatur asperiores
+          laudantium quod nobis perspiciatis, expedita quo reprehenderit quasi
+          iusto ullam error reiciendis.
+        </p>
+      </div>
+
+      <div class="second">
+        <div class="second-a">A</div>
+        <div class="second-b">B</div>
+      </div>
+    </div>
+    <div></div>
+  </header>
+  <footer>
+    <b>This is the footer</b>
+    <a href="#top">Back to the top</a>
+    <a href="/Index.html">Back to Homepage</a>
+  </footer>
+</html>

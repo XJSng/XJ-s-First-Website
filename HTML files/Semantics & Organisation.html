@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <title>Semantics & Organisation</title>
+  <header>
+    <h1>Semantics & Organisation</h1>
+    <p>
+      This title and body text are wrapped under the &lt;header&gt; &
+      &lt;/header&gt; elements. It helps ensure that developers know this is the
+      head of the website.
+    </p>
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" />
+  </header>
+  <nav>
+    <ul>
+      Navigation
+    </ul>
+    <p>
+      This is the naviagation section. It helps you navigate between pages in
+      the website
+    </p>
+    <li><a href="Index.html">Back to Homepage</a></li>
+    <li>
+      <a href="Headers, Lists, Emphasise and Special Characters.html"
+        >Headers, Lists, Emphasise and Special Characters</a
+      >
+    </li>
+    <li><a href="#The first article">The first article</a></li>
+    <li><a href="#The second article">The second article</a></li>
+    </li>
+  </nav>
+  <body>
+    <article>
+      <header>
+        <h2 id="The first article">The &lt;article&gt; & &lt;/article&gt; elements</h2>
+        <p>
+          This first article has also been wrapped under the &lt;header&gt; &
+          &lt;/header&gt; elements to show that this is the header of the
+          article
+        </p>
+      </header>
+      <p>
+        This whole article (including the title) has been wrapped under the
+        &lt;article&gt; & &lt;/article&gt; element. I have structured this page
+        with three articles to demonstrate how semantics is used behind the
+        scenes of a website to give it organisational structure. You might not
+        be able to see it on the frontend but the use of hidden structure tags
+        are at work.
+      </p>
+    </article>
+    <article>
+      <header>
+        <h2 id="The second article">The Second Article Example</h2>
+      </header>
+      <p>
+        This second article has the &lt;header&gt;, &lt;/header&gt;,
+        &lt;article&gt; & &lt;/article&gt; elements to seperate it from the first
+        article. Again, the user is unable to see it on the frontend but it is
+        useful for the developer reading this in code. Articles can be thought of as self-contained item of content.
+      </p>
+      <aside>
+        <h3>Sub Article</h3>
+        <p>
+          This is a subarticle. You can think of it as a child to the second
+          article example above. It has been give the the &lt;aside&gt; &
+          &lt;/aside&gt;
+        </p>
+      </aside>
+    </article>
+  </body>
+
+  <aside>
+    <h3>This is the &lt;aside&gt; element</h3>
+    <p>
+      This is a stand alone aisde element. This means that this section should
+      contain content about the website as a whole.
+    </p>
+  </aside>
+
+
+  <article>
+    <header>
+      <h2 id="The third article">The &lt;div&gt; and &lt;span&gt; elements</h2>
+    </header>
+    <div class="article body">
+    <p>
+      This third article talks about the &lt;div&gt;, &lt;/div&gt;,
+      &lt;span&gt; & &lt;/span&gt; elements which does not add any semantic meaning to the code but is useful for styling with CSS. The &lt;div&gt; element stands for "Division/Section" and is used for general purpose.
+    </p>
+    <p>
+        Then there is &lt;span&gt; which is a non-sementic element. Basically, it can use the &lt;span&gt; element to stylise with CSS in a later date.
+    </p>
+    </div>
+    </article>
+
+    <article>
+        <header>
+          <h2 id="The fourth article">Commenting in HTML</h2>
+        </header>
+        <div class="article body">
+        <p>
+          This fourth article talks about how to comment on HTML. This is done by using the &lt;&excl;&ndash; &ndash; insert comment &ndash; &ndash;&gt;. Comments are useful between developers working on the code to denote changes or purpose of this line of code. It is good practice to have a comment after a &lt;/div&gt; ends.</p>
+        <!--This is an example of a comment in the website code-->
+          <p>
+        </div>
+        </article>
+
+    <article>
+<header>
+    <h2 id="The fifth article">Sections in HTML</h2>
+    <p>
+        Sections are like chapters of a book while articles are like individual blog post with its own self-contained chapters or sections. This also means that sections can be within another sections or <em>sub-sections</em>. Something to note is that heading within a section are of the same size and will look the same heading size.
+    </p>
+</header>
+
+    </article>
+
+
+  <footer>
+   <h3>Footer</h3>
+    <p>
+      This footer is wrappped in the &lt;footer&gt; & &lt;/footer&gt; element.
+      This tells the users that this website was built in 2022 &copy;
+    </p>
+  </footer>
+</html>

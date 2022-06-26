@@ -1,0 +1,189 @@
+h1 {
+  color: #000;
+  font-size: 32pt;
+  padding: 5px 10px 5px;
+  background-color: #fff;
+  border: 30px;
+  border-color: rgb(123, 255, 255);
+  border-width: 30px;
+  width: auto;
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 25px;
+}
+
+h4 {
+  color: #000;
+  background-color: rgba(213, 255, 115, 0.5);
+  margin: 10px 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ol {
+  color: rgb(45, 101, 223);
+  font: Garamond;
+  padding-left: 35px;
+}
+
+ul {
+  color: black;
+  padding-left: 55px;
+}
+
+video {
+  width: 640;
+  max-height: 360px;
+  align-self: auto;
+  background-color: grey;
+}
+
+p {
+  font-size: 12pt;
+  color: black;
+  background-color: rgb(255, 244, 212);
+  padding-left: 35px;
+}
+
+div {
+  padding: 0.1px;
+  margin: 00.1px;
+}
+
+h2 {
+  font-size: 25px;
+  color: rgb(255, 132, 60);
+  padding-left: 35px;
+  background-color: white;
+}
+h3 {
+  font-size: 20px;
+  color: rgb(0, 116, 39);
+  padding-left: 35px;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+}
+
+h3.cascade {
+  font-size: 20px;
+  color: rgb(85, 85, 85);
+  background-color: rgb(214, 249, 255);
+  padding-left: 35px;
+  border-radius: 10px;
+}
+p.cascade {
+  font-size: 12pt;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 229, 220);
+  padding-left: 35px;
+  border-radius: 10px;
+}
+
+div .example {
+  color: blue;
+}
+div .example {
+  color: grey;
+}
+
+.cascade span {
+  color: rgb(10, 10, 201);
+}
+
+.highlight {
+  background-color: rgb(252, 252, 92);
+}
+
+footer {
+  color: rgb(218, 103, 218);
+  background-color: azure;
+}
+
+footer .greylight {
+  background-color: rgb(221, 221, 221);
+  padding-left: 20px;
+}
+
+.Box_A {
+  background-color: lightgrey;
+  padding: 30px;
+  border: 3px solid black;
+  margin-bottom: 20px;
+  width: 350px;
+  height: 250px;
+  box-sizing: border-box;
+}
+
+.Box_B {
+  background-color: orange;
+  border: 3px solid black;
+  width: 350px;
+  height: 250px;
+}
+
+.container p {
+  background-color: rgb(214, 245, 255);
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-area {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.main-area {
+  width: 66%;
+  float: left;
+}
+
+.siderbar {
+  width: 34%;
+  float: left;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+  flex: auto;
+}
+
+.main-nav {
+  margin-top: 20px;
+}
+
+.main-nav ul {
+  margin: 0;
+}
+
+.main-nav li {
+  list-style: none;
+  float: left;
+  margin-right: 0px;
+  font-size: smaller;
+}
+
+.main-nav a {
+  display: block;
+  color: #617140;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 3px solid #e5e9dc;
+  border-bottom: none;
+  border-right: none;
+}
+
+.main-nav a:hover {
+  background-color: #e5e9dc;
+}
